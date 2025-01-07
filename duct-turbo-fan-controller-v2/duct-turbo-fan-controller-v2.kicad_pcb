@@ -7546,7 +7546,7 @@
 		(layer "Edge.Cuts")
 		(uuid "b2cd1409-1d84-4017-abcf-7641fc2f1540")
 	)
-	(gr_text "DT/TB PWM Fan Controller v2.4"
+	(gr_text "DT/TB PWM Fan Controller v2.5"
 		(at 80.3 93.1 0)
 		(layer "F.SilkS")
 		(uuid "1cf0c5f3-fb01-465b-afa9-461697b46e40")
