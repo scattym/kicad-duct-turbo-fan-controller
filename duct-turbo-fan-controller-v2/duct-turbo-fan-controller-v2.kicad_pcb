@@ -7546,7 +7546,7 @@
 		(layer "Edge.Cuts")
 		(uuid "b2cd1409-1d84-4017-abcf-7641fc2f1540")
 	)
-	(gr_text "DT/TB PWM Fan Controller v2.3"
+	(gr_text "DT/TB PWM Fan Controller v2.4"
 		(at 80.3 93.1 0)
 		(layer "F.SilkS")
 		(uuid "1cf0c5f3-fb01-465b-afa9-461697b46e40")
@@ -7656,6 +7656,14 @@
 		(layer "F.Cu")
 		(net 2)
 		(uuid "d9d5c97c-3672-4078-95d9-28c56f8caa19")
+	)
+	(via
+		(at 104.45 83.175)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net 2)
+		(uuid "58fc7d7d-aa36-4694-b771-2ba24c4bb9d3")
 	)
 	(segment
 		(start 105.55 92.4)
