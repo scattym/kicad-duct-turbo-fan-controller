@@ -16,3 +16,13 @@ GND → GND
 PWM → D+
 
 TACH → D-
+
+
+duct-turbo-fan-controller - original based of esp32 doit it board - done - tested
+
+duct-turbo-fan-controller-v2 - moved to esp32-c3-wroom-02 - done - waiting testing
+
+duct-turbo-fan-controller-v3 - add bme280 and scd41 on board - in progress
+
+duct-turbo-fan-controller-v4 - on board buck converter - in progress
+
