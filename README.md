@@ -1,4 +1,3 @@
-<meta name="google-site-verification" content="FOfroy5N3TM7ZYFB-559EVdTj1EMqoGx1d7OL1bA8wg" />
 # kicad-duct-turbo-fan-controller
 Fan controller projects for the duct turbo, terrabloom and ac infinity fans
 
