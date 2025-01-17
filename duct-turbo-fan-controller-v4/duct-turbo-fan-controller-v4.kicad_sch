@@ -7244,7 +7244,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "10K"
 			(at 101.6 175.2599 0)
 			(effects
 				(font

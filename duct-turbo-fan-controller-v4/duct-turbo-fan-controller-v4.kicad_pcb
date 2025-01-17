@@ -10715,6 +10715,19 @@
 		(layer "Edge.Cuts")
 		(uuid "ff214bf5-e22d-4175-8be2-24fbfbdae474")
 	)
+	(gr_text "scattym"
+		(at 108.225 94.3 0)
+		(layer "F.SilkS")
+		(uuid "148a1bc8-841d-4794-9a91-96c708ccb775")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "DT/TB PWM Fan Controller v4.0"
 		(at 80.3 93.1 0)
 		(layer "F.SilkS")
