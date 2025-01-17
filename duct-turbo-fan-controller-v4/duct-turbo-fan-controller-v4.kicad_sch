@@ -6915,7 +6915,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_6.3x6.3_H3"
+		(property "Footprint" "Inductor_SMD:L_Bourns-SRN4018"
 			(at 140.97 173.99 0)
 			(effects
 				(font
