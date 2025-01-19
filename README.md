@@ -1,5 +1,5 @@
 # kicad-duct-turbo-fan-controller
-Fan controller projects for the duct turbo, terrabloom and ac infinity fans
+Fan controller projects for the duct turbo (ducturbo), terrabloom and ac infinity fans
 
 Simple project marrying up 3 premade boards, the esp32 doit v2, a buck-boost board and a scd41 board.
 
