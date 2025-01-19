@@ -2972,6 +2972,213 @@
 				)
 			)
 		)
+		(symbol "Sensor_Gas:SCD41-D-R2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SCD41-D-R2"
+				(at 6.985 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Sensor:Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://sensirion.com/media/documents/E0F04247/631EF271/CD_DS_SCD40_SCD41_Datasheet_D1.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Photoacoustic CO2 sensor, 40 000 ppm, I2C, 2.4-5.5 V, High accuracy  400 - 5000 ppm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "CO2 sensor I2C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Sensirion*SCD4?*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SCD41-D-R2_0_1"
+				(rectangle
+					(start 7.62 5.08)
+					(end -7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SCD41-D-R2_1_1"
+				(pin bidirectional line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54) hide
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -4699,6 +4906,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 87.63) (xy 105.41 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c462de-3f42-4b64-8a9f-6ab2e8ff90e8")
+	)
+	(wire
+		(pts
 			(xy 200.66 107.95) (xy 186.69 107.95)
 		)
 		(stroke
@@ -4716,6 +4933,16 @@
 			(type default)
 		)
 		(uuid "46afc1f5-c485-4d16-8f71-126e42a28b39")
+	)
+	(wire
+		(pts
+			(xy 119.38 132.08) (xy 123.19 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "479b8e12-c505-4ccd-93d9-04e5a5026687")
 	)
 	(wire
 		(pts
@@ -5016,16 +5243,6 @@
 			(type default)
 		)
 		(uuid "8779914e-88f1-47c1-a455-e9cb3280c2ac")
-	)
-	(wire
-		(pts
-			(xy 64.77 87.63) (xy 86.36 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89a0d64d-6ee3-4098-a7ea-e97dad136798")
 	)
 	(wire
 		(pts
@@ -5349,7 +5566,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 85.09) (xy 86.36 85.09)
+			(xy 64.77 85.09) (xy 105.41 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5536,6 +5753,16 @@
 			(type default)
 		)
 		(uuid "da70ec34-53a0-4388-ab00-ef4e07782b21")
+	)
+	(wire
+		(pts
+			(xy 119.38 134.62) (xy 123.19 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db2bb0c3-19cf-4ce4-a6ac-f75699d049de")
 	)
 	(wire
 		(pts
@@ -5892,6 +6119,28 @@
 			)
 		)
 	)
+	(global_label "SCD41_SCL"
+		(shape input)
+		(at 123.19 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0efac349-9e82-444d-8147-25e04ed9504d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 136.8189 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GPIO18"
 		(shape input)
 		(at 69.85 102.87 0)
@@ -6134,6 +6383,28 @@
 			)
 		)
 	)
+	(global_label "SCD41_SCL"
+		(shape input)
+		(at 105.41 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "81f61056-e54f-4582-b368-b9066b36e936")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.0389 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BME688_SDA"
 		(shape input)
 		(at 223.52 93.98 0)
@@ -6200,6 +6471,28 @@
 			)
 		)
 	)
+	(global_label "SCD41_SDA"
+		(shape input)
+		(at 123.19 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b535b56c-34b7-4755-ac3d-11ef482b04c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 136.8794 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "EN"
 		(shape output)
 		(at 172.72 31.75 0)
@@ -6213,6 +6506,28 @@
 		(uuid "b763ae64-a1f2-43b8-9c7e-9a7217d54543")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 178.1847 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCD41_SDA"
+		(shape input)
+		(at 105.41 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c2a08dab-51b0-4647-bcff-01376830f524")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.0994 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6748,6 +7063,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 109.22 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c46b4a1-c65a-4664-af91-823b6b5ca5cb")
+		(property "Reference" "#PWR015"
+			(at 109.22 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf9c9965-1d58-4a2b-ad75-ec86ed44241c")
+		)
+		(instances
+			(project "duct-turbo-fan-controller-v4"
+				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 59.69 182.88 0)
 		(unit 1)
@@ -7154,6 +7535,91 @@
 			(project "esp32_pwm_fan"
 				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Gas:SCD41-D-R2")
+		(at 109.22 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31933f38-ce8a-45de-991c-5fe229032c2d")
+		(property "Reference" "U1"
+			(at 100.33 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SCD41-D-R2"
+			(at 100.33 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Sensor:Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm"
+			(at 109.22 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://sensirion.com/media/documents/E0F04247/631EF271/CD_DS_SCD40_SCD41_Datasheet_D1.pdf"
+			(at 109.22 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Photoacoustic CO2 sensor, 40 000 ppm, I2C, 2.4-5.5 V, High accuracy  400 - 5000 ppm"
+			(at 109.22 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "20"
+			(uuid "95b90786-8a6b-4a36-bd8b-eecb24fa0133")
+		)
+		(pin "9"
+			(uuid "13168c5d-7cdc-4636-96c4-671c2e59476d")
+		)
+		(pin "6"
+			(uuid "267cdf30-4bd6-433c-9d85-e5e0f349f218")
+		)
+		(pin "19"
+			(uuid "16595c80-5807-42b9-b28b-183b656d986b")
+		)
+		(pin "21"
+			(uuid "11208983-617a-4b01-a36d-ddef3c2a116d")
+		)
+		(pin "7"
+			(uuid "7be18532-8e9a-44f1-9c09-f999cec0c068")
+		)
+		(pin "10"
+			(uuid "55d94594-58eb-47a7-b961-58242a8e0ac3")
+		)
+		(instances
+			(project ""
+				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -8608,6 +9074,72 @@
 			(project ""
 				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 109.22 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e990cdc-314a-4c6c-9a71-ee4596f519da")
+		(property "Reference" "#PWR016"
+			(at 109.22 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 109.22 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96b41da4-84fb-40dd-abb4-3a1e410e47e4")
+		)
+		(instances
+			(project "duct-turbo-fan-controller-v4"
+				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
