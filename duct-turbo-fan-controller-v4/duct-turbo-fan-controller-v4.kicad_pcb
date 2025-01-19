@@ -11359,7 +11359,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Ducturbo/Terra Bloom\nPWM Fan Controller v4.0"
+	(gr_text "Ducturbo/Terra Bloom\nPWM Fan Controller v4.1"
 		(at 96.5 91.5 0)
 		(layer "F.SilkS")
 		(uuid "1cf0c5f3-fb01-465b-afa9-461697b46e40")
