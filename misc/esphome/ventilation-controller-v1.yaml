@@ -1,0 +1,92 @@
+esphome:
+  name: ventilation-controller-dev-2
+  friendly_name: ventilation-controller-dev-2
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+ota:
+  platform: esphome
+  password: !secret ota_password
+
+mqtt:
+  broker: mqtt
+  username: !secret mqtt_user
+  password: !secret mqtt_password
+
+wifi:
+  domain: !secret domain
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Ventilation-Controller-Dev-2"
+    password: !secret ap_portal_password
+
+captive_portal:
+
+i2c:
+  sda: GPIO18
+  scl: GPIO5
+  scan: True
+  id: bus_a
+
+fan:
+  - platform: speed
+    output: fan_pwm_output
+    name: "Dev Intake Fan 2"
+
+output:
+  - platform: ledc
+    id: fan_pwm_output
+    inverted: False
+    pin:
+      inverted: False
+      number: GPIO16
+      # mode: INPUT_PULLUP
+    frequency: 19531
+    # min_power: 0
+    # max_power: 0.5
+
+sensor:
+  - platform: scd4x
+    temperature_offset: 4
+    co2:
+      name: "Ventilation Dev 2 CO2"
+      filters:
+        - skip_initial: 3
+    temperature:
+      name: "Ventilation Dev 2 Temperature"
+      filters:
+        - skip_initial: 3
+    humidity:
+      name: "Ventilation Dev 2 Humidity"
+      filters:
+        - skip_initial: 3
+    address: 0x62
+    update_interval: 30s
+
+
+  - platform: pulse_counter
+#    pin: GPIO17
+    use_pcnt: True
+    pin:
+      number: GPIO17
+      # inverted: true
+      mode:
+        input: True
+        pullup: True
+    name: Ventilation Fan Dev 2 RPM
+    id: fan_rpm_pulse
+    unit_of_measurement: 'RPM'
+    filters:
+      - multiply: 0.5
+    count_mode:
+      rising_edge: INCREMENT
+      falling_edge: DISABLE
+    update_interval: 30s #Low Interval for DEBUGGING
