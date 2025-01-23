@@ -3199,7 +3199,7 @@
 		(descr "SOD-323")
 		(tags "SOD-323")
 		(property "Reference" "D3"
-			(at 0 -1.85 90)
+			(at 3.12 -0.02 90)
 			(layer "F.SilkS")
 			(uuid "9b42bb18-5910-413f-b4b5-492f3af358f6")
 			(effects
@@ -3435,7 +3435,7 @@
 			(uuid "b19a7f7a-6b71-4bff-b802-2f4c7b93f2a2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -3.12 0.01 90)
+			(at 0 -1.85 90)
 			(layer "F.Fab")
 			(uuid "480bc130-bffc-4b42-98bd-a6cad12d89e8")
 			(effects
