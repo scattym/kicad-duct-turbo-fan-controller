@@ -22,7 +22,7 @@ duct-turbo-fan-controller - original based of esp32 doit it board - done - teste
 
 duct-turbo-fan-controller-v2 - moved to esp32-c3-wroom-02 - done - waiting testing
 
-duct-turbo-fan-controller-v3 - add bme680 on board - done - untested
+duct-turbo-fan-controller-v3 - add bme680 on board allow usb to power esp for programming - done - untested
 
 duct-turbo-fan-controller-v4 - on board buck converter and on board scd41 - done - waiting testing
 
