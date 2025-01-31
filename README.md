@@ -1,5 +1,5 @@
 # kicad-duct-turbo-fan-controller
-Fan controller projects for the duct turbo (ducturbo), terrabloom and ac infinity fans
+Wifi enabled fan controller projects for the duct turbo (ducturbo), terrabloom and ac infinity fans
 
 Simple project marrying up 3 premade boards, the esp32 doit v2, a buck-boost board and a scd41 board.
 
@@ -22,7 +22,7 @@ duct-turbo-fan-controller - original based of esp32 doit it board - done - teste
 
 duct-turbo-fan-controller-v2 - moved to esp32-c3-wroom-02 - done - waiting testing
 
-duct-turbo-fan-controller-v3 - add bme280 and scd41 on board - in progress
+duct-turbo-fan-controller-v3 - add bme680 on board allow usb to power esp for programming - done - untested
 
-duct-turbo-fan-controller-v4 - on board buck converter - in progress
+duct-turbo-fan-controller-v4 - on board buck converter and on board scd41 - done - waiting testing
 
