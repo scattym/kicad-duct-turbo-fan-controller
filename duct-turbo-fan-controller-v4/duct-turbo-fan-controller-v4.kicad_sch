@@ -4769,6 +4769,12 @@
 		(uuid "6b98b5af-979f-440c-9ff4-820a2e78bd0f")
 	)
 	(junction
+		(at 250.19 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c7d9e0a-1db2-4eb1-93c9-b3d7f4e489e7")
+	)
+	(junction
 		(at 142.24 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4791,12 +4797,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89382f7a-1c10-412a-b8af-ce039534fb93")
-	)
-	(junction
-		(at 250.19 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ec5e8d8-7ee8-4114-b381-03d78a25e1ba")
 	)
 	(junction
 		(at 116.84 181.61)
@@ -5312,16 +5312,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 114.3) (xy 250.19 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e54a42f-dc3f-4fc2-94c6-c034c05b8272")
-	)
-	(wire
-		(pts
 			(xy 254 161.29) (xy 237.49 161.29)
 		)
 		(stroke
@@ -5722,6 +5712,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 124.46) (xy 250.19 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "807cf054-5d09-4647-95b2-eecc8e5852ec")
+	)
+	(wire
+		(pts
 			(xy 49.53 26.67) (xy 53.34 26.67)
 		)
 		(stroke
@@ -5939,6 +5939,16 @@
 			(type default)
 		)
 		(uuid "a0337604-0593-4df4-a9e6-1c16805d4cef")
+	)
+	(wire
+		(pts
+			(xy 250.19 114.3) (xy 250.19 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1153ecb-7652-4612-be03-942ac12a9131")
 	)
 	(wire
 		(pts
@@ -6312,6 +6322,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 114.3) (xy 250.19 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6dc8277-41b3-49ea-83e3-2190fac7a7fb")
+	)
+	(wire
+		(pts
 			(xy 196.85 154.94) (xy 196.85 161.29)
 		)
 		(stroke
@@ -6559,16 +6579,6 @@
 			(type default)
 		)
 		(uuid "f37317fd-11de-4f3c-aab6-733193b7c416")
-	)
-	(wire
-		(pts
-			(xy 250.19 135.89) (xy 250.19 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f660a3d9-d175-4170-a722-d590ec1158f9")
 	)
 	(wire
 		(pts
@@ -9312,10 +9322,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "51a1fdcc-2782-498e-b67f-45602c49a66f")
 		(property "Reference" "R6"
-			(at 252.73 107.95 0)
+			(at 251.46 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9324,7 +9333,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 252.73 110.49 0)
+			(at 251.46 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9332,7 +9341,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 250.19 109.22 0)
 			(effects
 				(font
@@ -10698,6 +10707,76 @@
 			(project ""
 				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 250.19 121.92 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae53535c-e71d-4972-b3c6-b8141437491b")
+		(property "Reference" "R17"
+			(at 255.27 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100"
+			(at 255.27 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 250.19 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a9b0d7ee-23dd-4ab9-a0c6-ee9746e9fecf")
+		)
+		(pin "1"
+			(uuid "8c6e7ea7-6890-4868-86f2-9cf9e016850f")
+		)
+		(instances
+			(project "duct-turbo-fan-controller-v4"
+				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
+					(reference "R17")
 					(unit 1)
 				)
 			)
