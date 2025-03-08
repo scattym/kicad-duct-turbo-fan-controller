@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,41 +9,42 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes yes)
@@ -53,7 +54,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -61,16 +61,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
@@ -101,19 +105,18 @@
 	(net 19 "Net-(J1-Pin_3)")
 	(net 20 "Net-(J1-Pin_4)")
 	(net 21 "Net-(Q2-D)")
-	(net 22 "Net-(U2-CSB)")
-	(net 23 "+5V")
-	(net 24 "Net-(U3-IO2)")
-	(net 25 "Net-(U3-IO9)")
-	(net 26 "unconnected-(U3-IO8-Pad7)")
-	(net 27 "Net-(U5-BST)")
-	(net 28 "Net-(U5-FB)")
-	(net 29 "Net-(U5-EN)")
-	(net 30 "BUCK_PWM_OUT")
-	(net 31 "Net-(D4-A)")
-	(net 32 "Net-(D5-A)")
-	(net 33 "BME688_SDA")
-	(net 34 "Net-(J4-PadR2)")
+	(net 22 "+5V")
+	(net 23 "Net-(U3-IO2)")
+	(net 24 "Net-(U3-IO9)")
+	(net 25 "unconnected-(U3-IO8-Pad7)")
+	(net 26 "Net-(U5-BST)")
+	(net 27 "Net-(U5-FB)")
+	(net 28 "Net-(U5-EN)")
+	(net 29 "BUCK_PWM_OUT")
+	(net 30 "Net-(D4-A)")
+	(net 31 "Net-(D5-A)")
+	(net 32 "BME688_SDA")
+	(net 33 "Net-(J4-PadR2)")
 	(footprint "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "008d186b-fe73-41cb-ac54-db5530245f7c")
@@ -138,19 +141,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "01fcc051-e7df-4cb2-a78b-22be9033c3d7")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -183,7 +173,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/455b8703-4844-432c-8746-9d17aa718dc7")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -320,7 +310,7 @@
 		(pad "1" smd roundrect
 			(at -0.875 0)
 			(size 1.05 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 7 "LED")
 			(pinfunction "K")
@@ -330,13 +320,14 @@
 		(pad "2" smd roundrect
 			(at 0.875 0)
 			(size 1.05 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 31 "Net-(D4-A)")
+			(net 30 "Net-(D4-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "cab91062-5c1d-4b1a-9df8-e3ac36611f6b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -377,19 +368,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Bourns-SRN4018"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "687d3305-7ac9-4b82-8a55-28664a79e79e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRN4018.pdf"
 			(at 0 0 180)
 			(unlocked yes)
@@ -418,7 +396,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/231ac7af-2282-42ea-8f01-7c424fac16da")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -595,19 +573,20 @@
 		(pad "1" smd rect
 			(at -1.525 0 180)
 			(size 1.5 3.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 30 "BUCK_PWM_OUT")
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 29 "BUCK_PWM_OUT")
 			(pintype "passive")
 			(uuid "4f968a90-0948-4f2a-b8bb-238fd9dfd11f")
 		)
 		(pad "2" smd rect
 			(at 1.525 0 180)
 			(size 1.5 3.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pintype "passive")
 			(uuid "df80357d-10bf-4b1d-9edc-1132c47a345f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns-SRN4018.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -648,18 +627,6 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "61b7515c-5db8-401c-a359-52351e73666a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -686,7 +653,7 @@
 		)
 		(property ki_fp_filters "TerminalBlock*:*")
 		(path "/f0b8986c-1178-426e-b5b8-8a15c9988c5f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -966,7 +933,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "e17e8c12-6be7-4456-a30a-b1eed84d4fe7")
 		)
@@ -977,7 +944,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "f96d0895-8bd2-4533-b392-9d280015f813")
 		)
@@ -988,7 +955,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "780afd53-4449-4c62-85d2-98e534639a2e")
 		)
@@ -999,7 +966,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "5016a466-96a6-4b45-ab42-ee3cd072cbb5")
 		)
@@ -1058,6 +1025,7 @@
 			(pintype "passive")
 			(uuid "45652436-8366-4bb7-b2de-14bfbb03cb06")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal.wrl"
 			(offset
 				(xyz 7.625 0 0)
@@ -1098,19 +1066,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7c862ee3-6a8e-49c5-a411-e885156e1c41")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -1139,7 +1094,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/4731e2b6-fb31-4678-a1a8-592943e80e41")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1256,21 +1211,22 @@
 		(pad "1" smd roundrect
 			(at -1 0 180)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 28 "Net-(U5-FB)")
+			(net 27 "Net-(U5-FB)")
 			(pintype "passive")
 			(uuid "4758e674-734c-43ad-b21c-effae0102325")
 		)
 		(pad "2" smd roundrect
 			(at 1 0 180)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "6d5b8069-5126-4dca-a5a2-41a93e325695")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1311,18 +1267,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Sensor:Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "75dc75b9-ee3c-4177-89da-6f0f2ec7f610")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://sensirion.com/media/documents/E0F04247/631EF271/CD_DS_SCD40_SCD41_Datasheet_D1.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -1349,7 +1293,7 @@
 		)
 		(property ki_fp_filters "Sensirion*SCD4?*")
 		(path "/31933f38-ce8a-45de-991c-5fe229032c2d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1440,7 +1384,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "f56a01ee-1d11-494c-8795-0c762b5602c4")
 		)
@@ -1576,42 +1520,42 @@
 		(pad "1" smd roundrect
 			(at -4.15 -2.5 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "34d49cd2-8b56-4821-9485-9f74fe1de030")
 		)
 		(pad "2" smd roundrect
 			(at -4.15 -1.25 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "b63c1279-ad1b-4ab6-9b36-bd0563ff297f")
 		)
 		(pad "3" smd roundrect
 			(at -4.15 0 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "dd234ec8-dfcf-4ab3-9950-26bf97843756")
 		)
 		(pad "4" smd roundrect
 			(at -4.15 1.25 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "1ef8e53d-02ab-41f8-8768-9ae33c7e8413")
 		)
 		(pad "5" smd roundrect
 			(at -4.15 2.5 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "d072cfc3-63e0-40c1-a88d-266b867de863")
 		)
 		(pad "6" smd roundrect
 			(at -2.5 4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -1621,7 +1565,7 @@
 		(pad "7" smd roundrect
 			(at -1.25 4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pinfunction "VDD")
@@ -1631,14 +1575,14 @@
 		(pad "8" smd roundrect
 			(at 0 4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "666fd6ae-9fdc-4536-9784-44d76a1256d5")
 		)
 		(pad "9" smd roundrect
 			(at 1.25 4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "BME688_SCL")
 			(pinfunction "SCL")
@@ -1648,9 +1592,9 @@
 		(pad "10" smd roundrect
 			(at 2.5 4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 33 "BME688_SDA")
+			(net 32 "BME688_SDA")
 			(pinfunction "SDA")
 			(pintype "bidirectional")
 			(uuid "40005a16-b27b-41bf-bba5-912ff8b2b0ca")
@@ -1658,63 +1602,63 @@
 		(pad "11" smd roundrect
 			(at 4.15 2.5 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "5126cf3f-a448-43ad-bd7d-ca5bed6d9905")
 		)
 		(pad "12" smd roundrect
 			(at 4.15 1.25 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "b4152c71-496d-4dda-8053-914a95b2fd94")
 		)
 		(pad "13" smd roundrect
 			(at 4.15 0 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "4bbdcd63-cac6-45fe-8fad-8030b41b93ac")
 		)
 		(pad "14" smd roundrect
 			(at 4.15 -1.25 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "29f30615-6d18-438d-a587-710d424078ef")
 		)
 		(pad "15" smd roundrect
 			(at 4.15 -2.5 90)
 			(size 1.9 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "2c924e08-bbd6-4ab4-8cc7-b942f742fc90")
 		)
 		(pad "16" smd roundrect
 			(at 2.5 -4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "32c2d702-daa7-4ac7-93ee-eca51f9712a6")
 		)
 		(pad "17" smd roundrect
 			(at 1.25 -4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "b76d94f2-87da-41f7-b48f-f31a4cf516ce")
 		)
 		(pad "18" smd roundrect
 			(at 0 -4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "3f7c9b1b-d219-43f0-a875-d3db29f223fc")
 		)
 		(pad "19" smd roundrect
 			(at -1.25 -4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pinfunction "VDD")
@@ -1724,7 +1668,7 @@
 		(pad "20" smd roundrect
 			(at -2.5 -4.15 90)
 			(size 0.85 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -1742,6 +1686,7 @@
 			(zone_connect 2)
 			(uuid "e77517f8-e1cc-4fbb-afdb-3251340bae88")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Sensor.3dshapes/Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1782,19 +1727,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ea0ddc38-972d-48d7-bd0b-dca33f6a8f3b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -1823,7 +1755,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/aae303f9-261b-4dde-b206-78680f519ff5")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1940,21 +1872,22 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 27 "Net-(U5-BST)")
+			(net 26 "Net-(U5-BST)")
 			(pintype "passive")
 			(uuid "767d3e94-fb43-4e7f-8090-acee261d479e")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 30 "BUCK_PWM_OUT")
+			(net 29 "BUCK_PWM_OUT")
 			(pintype "passive")
 			(uuid "edce38d9-0b2c-4fb5-921f-fc435da15fbb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1995,18 +1928,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2f95ca7c-68e4-4639-b461-093d24c01d9f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "http://www.aosmd.com/res/data_sheets/AOZ1282CI-1.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -2033,7 +1954,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/46b77622-f266-4ddb-9150-d3907b88f9e9")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2084,7 +2005,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "3ae32371-c2d0-469e-a5aa-0c3bbb9817cf")
 		)
@@ -2192,9 +2113,9 @@
 		(pad "1" smd roundrect
 			(at -1.1375 -0.95 90)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 27 "Net-(U5-BST)")
+			(net 26 "Net-(U5-BST)")
 			(pinfunction "BST")
 			(pintype "input")
 			(uuid "9e6c02e7-560f-458e-bca3-fbca958e383e")
@@ -2202,7 +2123,7 @@
 		(pad "2" smd roundrect
 			(at -1.1375 0 90)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -2212,9 +2133,9 @@
 		(pad "3" smd roundrect
 			(at -1.1375 0.95 90)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 28 "Net-(U5-FB)")
+			(net 27 "Net-(U5-FB)")
 			(pinfunction "FB")
 			(pintype "input")
 			(uuid "bf73be22-363a-4324-9151-8da7a0a57fa2")
@@ -2222,9 +2143,9 @@
 		(pad "4" smd roundrect
 			(at 1.1375 0.95 90)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 29 "Net-(U5-EN)")
+			(net 28 "Net-(U5-EN)")
 			(pinfunction "EN")
 			(pintype "input")
 			(uuid "ff11ab5b-f14d-495a-a3bf-e1c5581aa234")
@@ -2232,7 +2153,7 @@
 		(pad "5" smd roundrect
 			(at 1.1375 0 90)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+10V")
 			(pinfunction "VIN")
@@ -2242,13 +2163,14 @@
 		(pad "6" smd roundrect
 			(at 1.1375 -0.95 90)
 			(size 1.325 0.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 30 "BUCK_PWM_OUT")
+			(net 29 "BUCK_PWM_OUT")
 			(pinfunction "LX")
 			(pintype "power_out")
 			(uuid "c4cb9458-2bb2-4da8-83dc-0d5799384ea7")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2289,19 +2211,6 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "988b5a16-8290-4822-b9ec-42e39cd4dde2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -2330,7 +2239,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/bb95d301-3032-473a-9d55-edfec1c64aa8")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2467,7 +2376,7 @@
 		(pad "1" smd roundrect
 			(at -0.875 0)
 			(size 1.05 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "K")
@@ -2477,13 +2386,14 @@
 		(pad "2" smd roundrect
 			(at 0.875 0)
 			(size 1.05 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 32 "Net-(D5-A)")
+			(net 31 "Net-(D5-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "c095fdd7-d31a-4f9c-8fa2-b6a6dee7419f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2524,21 +2434,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9923f78a-c2b5-4894-87b8-95697a74c996")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2551,7 +2448,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2565,7 +2462,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/1f8ca895-a385-401a-907f-04e353487916")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2768,11 +2665,12 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 33 "BME688_SDA")
+			(net 32 "BME688_SDA")
 			(pinfunction "Pin_4")
 			(pintype "passive")
 			(uuid "06e38a30-bb58-4e9f-96aa-ee1aa983751a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2813,19 +2711,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "79a0cd43-12e3-435e-9e1d-994043523791")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -2854,7 +2739,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/b837c102-1f6b-4c7c-b0d5-bf209dfc8613")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2971,7 +2856,7 @@
 		(pad "1" smd roundrect
 			(at -0.9125 0 180)
 			(size 0.975 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -2980,12 +2865,13 @@
 		(pad "2" smd roundrect
 			(at 0.9125 0 180)
 			(size 0.975 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 31 "Net-(D4-A)")
+			(net 30 "Net-(D4-A)")
 			(pintype "passive")
 			(uuid "b9ff4f99-d229-4c62-94c3-4ff6d0f1982c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3026,19 +2912,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4e80804f-6d66-4e26-9a3f-30da21765618")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -3067,7 +2940,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/3e9e67c9-ce01-4c50-96a8-8489de62c461")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3184,21 +3057,22 @@
 		(pad "1" smd roundrect
 			(at -0.9125 0)
 			(size 0.975 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 32 "Net-(D5-A)")
+			(net 31 "Net-(D5-A)")
 			(pintype "passive")
 			(uuid "dd8aacc7-ef01-425f-a5cf-bb81552ce3ac")
 		)
 		(pad "2" smd roundrect
 			(at 0.9125 0)
 			(size 0.975 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pintype "passive")
 			(uuid "db195c50-fb66-45ee-8b9f-6db51b69e89f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3239,18 +3113,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "724b510c-5cd3-4ac7-b786-5ab6e9cb86c8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -3277,7 +3139,7 @@
 		)
 		(property ki_fp_filters "*LGA*3x3mm*P0.8mm*Clockwise*")
 		(path "/fce38ad8-ec05-46b8-a6e1-ebca9ac4fafb")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3308,7 +3170,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "fb6fe264-23fd-4678-8b28-03388289a412")
 		)
@@ -3416,7 +3278,7 @@
 		(pad "1" smd roundrect
 			(at -1.2 -1.1875 90)
 			(size 0.5 0.525)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -3426,9 +3288,9 @@
 		(pad "2" smd roundrect
 			(at -0.4 -1.1875 90)
 			(size 0.5 0.525)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 22 "Net-(U2-CSB)")
+			(net 4 "+3V3")
 			(pinfunction "CSB")
 			(pintype "input")
 			(uuid "9d1212b9-0b79-411f-9a62-7b7584a459a5")
@@ -3436,9 +3298,9 @@
 		(pad "3" smd roundrect
 			(at 0.4 -1.1875 90)
 			(size 0.5 0.525)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 33 "BME688_SDA")
+			(net 32 "BME688_SDA")
 			(pinfunction "SDI")
 			(pintype "bidirectional")
 			(uuid "f6b375a5-c333-4f21-8932-598c8ce5675d")
@@ -3446,7 +3308,7 @@
 		(pad "4" smd roundrect
 			(at 1.2 -1.1875 90)
 			(size 0.5 0.525)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "BME688_SCL")
 			(pinfunction "SCK")
@@ -3456,7 +3318,7 @@
 		(pad "5" smd roundrect
 			(at 1.2 1.1875 90)
 			(size 0.5 0.525)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "SDO")
@@ -3466,7 +3328,7 @@
 		(pad "6" smd roundrect
 			(at 0.4 1.1875 90)
 			(size 0.5 0.525)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pinfunction "VDDIO")
@@ -3476,7 +3338,7 @@
 		(pad "7" smd roundrect
 			(at -0.4 1.1875 90)
 			(size 0.5 0.525)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -3486,13 +3348,14 @@
 		(pad "8" smd roundrect
 			(at -1.2 1.1875 90)
 			(size 0.5 0.525)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "617cda11-f345-4b2e-bce7-4ebb70cc0bd6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_LGA.3dshapes/Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3533,21 +3396,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "890c7f87-365b-4c2f-8256-30dcecdc881f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3560,7 +3410,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3574,7 +3424,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/87bb7eea-7c51-4421-b3f1-51bdcff94f1f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3691,7 +3541,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -3700,12 +3550,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "7947ab0b-9680-48a4-a90e-fa520c1b2d17")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3748,19 +3599,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ed376125-7777-4fc5-9838-145a7f7aea65")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -3789,7 +3627,7 @@
 		)
 		(property ki_fp_filters "Jack*")
 		(path "/710e9752-7624-447a-a750-e1dce55dc6d0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4038,20 +3876,20 @@
 			(at -4.75 0 180)
 			(size 1.6 1.6)
 			(drill 1.6)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2f0cbb43-fee2-459f-a297-b3cd02e0e487")
 		)
 		(pad "" np_thru_hole circle
 			(at 2.25 0 180)
 			(size 1.6 1.6)
 			(drill 1.6)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "8ea46b9f-79a2-4510-96b0-6b6cd3c08a08")
 		)
 		(pad "R1" smd rect
 			(at -0.15 -3.25 180)
 			(size 1.2 2.5)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "Net-(Q2-D)")
 			(pintype "passive")
 			(uuid "940eba18-9ad0-4b44-b960-26257dc0da52")
@@ -4059,15 +3897,15 @@
 		(pad "R2" smd rect
 			(at -3.15 -3.25 180)
 			(size 1.2 2.5)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 34 "Net-(J4-PadR2)")
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 33 "Net-(J4-PadR2)")
 			(pintype "passive")
 			(uuid "f75518d0-c55b-44a4-bbee-555db7ba2088")
 		)
 		(pad "S" smd rect
 			(at 4.95 3.25 180)
 			(size 1.2 2.5)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "fdcb2a88-a779-44f3-9a52-74dcc5ddbe44")
@@ -4075,11 +3913,12 @@
 		(pad "T" smd rect
 			(at 3.85 -3.25 180)
 			(size 1.2 2.5)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "+10V")
 			(pintype "passive")
 			(uuid "cc447c49-b27f-46ed-a50f-0ded570656d9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_3.5mm_KoreanHropartsElec_PJ-320D-4A_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4099,7 +3938,7 @@
 		(descr "SOD-123")
 		(tags "SOD-123")
 		(property "Reference" "D3"
-			(at 0 -2 -90)
+			(at 0 -2 270)
 			(layer "F.SilkS")
 			(uuid "a759492e-a764-443e-8d33-8b0584274a96")
 			(effects
@@ -4110,7 +3949,7 @@
 			)
 		)
 		(property "Value" "PMEG4005EGWX"
-			(at 0 2.1 -90)
+			(at 0 2.1 270)
 			(layer "F.Fab")
 			(uuid "9aafc6dd-44b4-4ff2-af3d-25b5172d26fa")
 			(effects
@@ -4120,21 +3959,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "aa5965a6-1a00-49a5-b9c3-50ff46afd92f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4147,7 +3973,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4161,7 +3987,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/198ff3b4-8f1f-46fe-8ffd-5384cd2dd453")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4345,7 +4171,7 @@
 			(uuid "d1b0bdf8-5f8a-408e-910b-47b35635fc2a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2 -90)
+			(at 0 -2 270)
 			(layer "F.Fab")
 			(uuid "d824bc4a-bd10-4e19-8417-b15a40d551d4")
 			(effects
@@ -4358,9 +4184,9 @@
 		(pad "1" smd roundrect
 			(at -1.65 0 270)
 			(size 0.9 1.2)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 30 "BUCK_PWM_OUT")
+			(net 29 "BUCK_PWM_OUT")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "a06b5446-8747-47b0-8e5c-da7ce4402954")
@@ -4368,13 +4194,14 @@
 		(pad "2" smd roundrect
 			(at 1.65 0 270)
 			(size 0.9 1.2)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "5c6d9243-ac2f-4cd8-aedb-38fb793d55ec")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4415,19 +4242,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_Micro-B_Molex-105017-0001"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "51eda04a-a25b-488f-877d-374a370d75fe")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -4456,7 +4270,7 @@
 		)
 		(property ki_fp_filters "USB*")
 		(path "/8b284e63-932d-46b0-8980-0aae2f3a9e44")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4704,8 +4518,8 @@
 		(pad "1" smd rect
 			(at -1.3 -1.4625 90)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 23 "+5V")
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 22 "+5V")
 			(pinfunction "VBUS")
 			(pintype "passive")
 			(uuid "e9e7d25a-39f2-41a1-ab8a-675f0172e101")
@@ -4713,7 +4527,7 @@
 		(pad "2" smd rect
 			(at -0.65 -1.4625 90)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 14 "GPIO18")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -4722,7 +4536,7 @@
 		(pad "3" smd rect
 			(at 0 -1.4625 90)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "GPIO19")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -4731,7 +4545,7 @@
 		(pad "4" smd rect
 			(at 0.65 -1.4625 90)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 13 "unconnected-(J3-ID-Pad4)")
 			(pinfunction "ID")
 			(pintype "passive+no_connect")
@@ -4740,7 +4554,7 @@
 		(pad "5" smd rect
 			(at 1.3 -1.4625 90)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -4780,7 +4594,7 @@
 		(pad "6" smd rect
 			(at -1 1.2375 90)
 			(size 1.5 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "Shield")
 			(pintype "passive")
@@ -4789,7 +4603,7 @@
 		(pad "6" smd rect
 			(at 1 1.2375 90)
 			(size 1.5 1.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "Shield")
 			(pintype "passive")
@@ -4826,6 +4640,7 @@
 			(pintype "passive")
 			(uuid "869110e4-68ab-4eff-860e-4f8ed2eeddd3")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_Molex-105017-0001.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4866,21 +4681,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1c381a3a-b4f6-4e9e-a159-18d28acdbf2a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4893,7 +4695,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4907,7 +4709,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/5aba579b-4578-4291-89b2-f446e5a56e44")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5024,7 +4826,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 270)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -5033,12 +4835,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 270)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 28 "Net-(U5-FB)")
+			(net 27 "Net-(U5-FB)")
 			(pintype "passive")
 			(uuid "e776388b-b4ba-4ce3-acf3-3a2a2453275a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5079,19 +4882,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5d9af563-dc3c-44cd-8c77-c0cfdf033595")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -5120,7 +4910,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/34d0feff-7b00-4fc9-94b3-31578ed36cf1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5237,7 +5027,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 180)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
 			(net 3 "+10V")
 			(pintype "passive")
@@ -5246,12 +5036,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 180)
 			(size 1.2 1.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 29 "Net-(U5-EN)")
+			(net 28 "Net-(U5-EN)")
 			(pintype "passive")
 			(uuid "9710aac0-f8c4-40fd-8a66-5259f619cdaa")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5292,19 +5083,6 @@
 				)
 			)
 		)
-		(property "Footprint" "RF_Module:ESP32-C3-WROOM-02"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "681cd78a-608a-4304-b414-a545396325b3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf"
 			(at 0 0 0)
 			(unlocked yes)
@@ -5333,7 +5111,7 @@
 		)
 		(property ki_fp_filters "ESP32?C3*WROOM?02*")
 		(path "/01d67261-8b35-4c28-92fd-e801ea30556e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5404,7 +5182,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "bb0941b0-dc54-4ed8-a84b-85fdda4257a2")
 		)
@@ -5820,7 +5598,7 @@
 		(pad "1" smd rect
 			(at -8.75 -6)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pinfunction "3V3")
 			(pintype "power_in")
@@ -5829,7 +5607,7 @@
 		(pad "2" smd rect
 			(at -8.75 -4.5)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "EN")
 			(pinfunction "EN")
 			(pintype "input")
@@ -5838,7 +5616,7 @@
 		(pad "3" smd rect
 			(at -8.75 -3)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "BME688_SCL")
 			(pinfunction "IO4")
 			(pintype "bidirectional")
@@ -5847,8 +5625,8 @@
 		(pad "4" smd rect
 			(at -8.75 -1.5)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 33 "BME688_SDA")
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 32 "BME688_SDA")
 			(pinfunction "IO5")
 			(pintype "bidirectional")
 			(uuid "e3c68151-0b18-4739-9411-c7e70224d751")
@@ -5856,7 +5634,7 @@
 		(pad "5" smd rect
 			(at -8.75 0)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 11 "Tacho")
 			(pinfunction "IO6")
 			(pintype "bidirectional")
@@ -5865,7 +5643,7 @@
 		(pad "6" smd rect
 			(at -8.75 1.5)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "GPIO_PWM")
 			(pinfunction "IO7")
 			(pintype "bidirectional")
@@ -5874,8 +5652,8 @@
 		(pad "7" smd rect
 			(at -8.75 3)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 26 "unconnected-(U3-IO8-Pad7)")
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 25 "unconnected-(U3-IO8-Pad7)")
 			(pinfunction "IO8")
 			(pintype "bidirectional")
 			(uuid "948a8893-fe32-4c30-a9ff-c17aa63f7dc8")
@@ -5883,8 +5661,8 @@
 		(pad "8" smd rect
 			(at -8.75 4.5)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 25 "Net-(U3-IO9)")
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 24 "Net-(U3-IO9)")
 			(pinfunction "IO9")
 			(pintype "bidirectional")
 			(uuid "f0e04c0d-046f-4621-bce3-2e0b59e609a7")
@@ -5892,7 +5670,7 @@
 		(pad "9" smd rect
 			(at -8.75 6)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
@@ -5901,7 +5679,7 @@
 		(pad "10" smd rect
 			(at 8.75 6)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 8 "unconnected-(U3-IO10-Pad10)")
 			(pinfunction "IO10")
 			(pintype "bidirectional")
@@ -5910,7 +5688,7 @@
 		(pad "11" smd rect
 			(at 8.75 4.5)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 10 "Net-(J2-Pin_3)")
 			(pinfunction "IO20/RXD")
 			(pintype "bidirectional")
@@ -5919,7 +5697,7 @@
 		(pad "12" smd rect
 			(at 8.75 3)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 12 "Net-(J2-Pin_2)")
 			(pinfunction "IO21/TXD")
 			(pintype "bidirectional")
@@ -5928,7 +5706,7 @@
 		(pad "13" smd rect
 			(at 8.75 1.5)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 14 "GPIO18")
 			(pinfunction "IO18")
 			(pintype "bidirectional")
@@ -5937,7 +5715,7 @@
 		(pad "14" smd rect
 			(at 8.75 0)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "GPIO19")
 			(pinfunction "IO19")
 			(pintype "bidirectional")
@@ -5946,7 +5724,7 @@
 		(pad "15" smd rect
 			(at 8.75 -1.5)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 7 "LED")
 			(pinfunction "IO3")
 			(pintype "bidirectional")
@@ -5955,8 +5733,8 @@
 		(pad "16" smd rect
 			(at 8.75 -3)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 24 "Net-(U3-IO2)")
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 23 "Net-(U3-IO2)")
 			(pinfunction "IO2")
 			(pintype "bidirectional")
 			(uuid "252c9436-7a1d-4317-9eac-8918ccf1392b")
@@ -5964,7 +5742,7 @@
 		(pad "17" smd rect
 			(at 8.75 -4.5)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 20 "Net-(J1-Pin_4)")
 			(pinfunction "IO1")
 			(pintype "bidirectional")
@@ -5973,7 +5751,7 @@
 		(pad "18" smd rect
 			(at 8.75 -6)
 			(size 1.5 0.9)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 19 "Net-(J1-Pin_3)")
 			(pinfunction "IO0")
 			(pintype "bidirectional")
@@ -6147,7 +5925,7 @@
 		(zone
 			(net 0)
 			(net_name "")
-			(layers "F&B.Cu")
+			(layers "F.Cu" "B.Cu")
 			(uuid "482ec9fe-16f9-475b-92d7-c588bf0d1bb8")
 			(hatch full 0.508)
 			(connect_pads
@@ -6162,6 +5940,10 @@
 				(copperpour not_allowed)
 				(footprints not_allowed)
 			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
 			(fill
 				(thermal_gap 0.508)
 				(thermal_bridge_width 0.508)
@@ -6172,6 +5954,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-C3-WROOM-02.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6212,21 +5995,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4af506d3-b0bf-4b9a-ab08-9c022178a743")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6239,7 +6009,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6253,7 +6023,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d6273ade-6be7-49c7-ad70-0cd8635c6a1a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6461,6 +6231,7 @@
 			(pintype "passive")
 			(uuid "77bf6f41-5806-46eb-af47-cc486f8b2466")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6501,19 +6272,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "72879b2e-ca75-451d-85ec-c04268e355d3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -6542,7 +6300,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c1bbb6a5-9bc7-4826-b255-4be3cd910f89")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6659,7 +6417,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
 			(net 3 "+10V")
 			(pintype "passive")
@@ -6668,12 +6426,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 180)
 			(size 1.175 1.45)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "7808d857-27b0-4b32-8e02-48895ff333aa")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6710,19 +6469,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9155b28d-dae0-41b9-9644-4e22d8618bb8")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6781,7 +6527,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/8039718b-89e9-461e-9761-350e81c2ff23")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6978,7 +6724,7 @@
 		(pad "1" smd roundrect
 			(at -1.65 0)
 			(size 0.9 1.2)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+10V")
 			(pinfunction "K")
@@ -6988,13 +6734,14 @@
 		(pad "2" smd roundrect
 			(at 1.65 0)
 			(size 0.9 1.2)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 23 "+5V")
+			(net 22 "+5V")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "b1c52187-0525-407b-a519-72ccc521183d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7035,19 +6782,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dd66bad0-c63a-401d-acae-d5fd02f014e3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -7076,7 +6810,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/eb5cc46d-31fa-4019-9d81-2c06eab9b048")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7193,7 +6927,7 @@
 		(pad "1" smd roundrect
 			(at -0.9125 0 180)
 			(size 0.975 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -7202,12 +6936,13 @@
 		(pad "2" smd roundrect
 			(at 0.9125 0 180)
 			(size 0.975 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 24 "Net-(U3-IO2)")
+			(net 23 "Net-(U3-IO2)")
 			(pintype "passive")
 			(uuid "84340cc9-f21c-4257-8535-6600b4e08948")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7250,20 +6985,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "77e67578-9afa-4a6d-a996-30511f42ee93")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -7294,7 +7015,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ec8d45bb-82e5-4c0a-a422-27b44061d4d7")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7412,7 +7133,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 270)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -7421,12 +7142,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 270)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
 			(net 5 "EN")
 			(pintype "passive")
 			(uuid "9150254a-879f-455c-ac89-ab485a11269e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7469,19 +7191,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "9bf6c177-289e-431a-9a0f-a87410dc7460")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
@@ -7510,7 +7219,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/64f311e2-d4eb-4afc-bfa9-a322b3dd91f2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7561,7 +7270,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "47d01654-7d60-4940-903b-6d50edb751a8")
 		)
@@ -7670,7 +7379,7 @@
 		(pad "1" smd roundrect
 			(at -0.9375 0.95 270)
 			(size 1.475 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 18 "Net-(Q2-G)")
 			(pinfunction "G")
@@ -7680,7 +7389,7 @@
 		(pad "2" smd roundrect
 			(at -0.9375 -0.95 270)
 			(size 1.475 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+10V")
 			(pinfunction "S")
@@ -7690,13 +7399,14 @@
 		(pad "3" smd roundrect
 			(at 0.9375 0 270)
 			(size 1.475 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 21 "Net-(Q2-D)")
 			(pinfunction "D")
 			(pintype "passive")
 			(uuid "653ef9f7-f71c-40be-99be-d706b4544b89")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7739,20 +7449,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "bf3464b9-0dbd-406f-bc71-510fb687ba32")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -7783,7 +7479,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/2b1ff7b7-bab8-4cc5-a7ac-aa457b48c3d9")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7901,7 +7597,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 270)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
 			(net 5 "EN")
 			(pintype "passive")
@@ -7910,12 +7606,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 270)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
 			(net 9 "Net-(C5-Pad1)")
 			(pintype "passive")
 			(uuid "fd60502d-dd0a-4e7e-9562-c431c3b87211")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7958,19 +7655,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "48335ec3-f447-4a28-8534-7ce2442cd3b5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
@@ -7999,7 +7683,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/429eccd6-c842-4363-8a0f-f103fe594825")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8137,7 +7821,7 @@
 		(pad "1" smd roundrect
 			(at -1.625 0 270)
 			(size 1.5 2.35)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.166667)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -8146,12 +7830,13 @@
 		(pad "2" smd roundrect
 			(at 1.625 0 270)
 			(size 1.5 2.35)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.166667)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "8743c0b7-b6c0-4507-9422-b7dace1eb8e1")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-3528-12_Kemet-T.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8194,19 +7879,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "b893334c-9446-47bf-a78e-6655597728bc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
@@ -8235,7 +7907,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/b4e64b94-f1b2-4bf2-80fa-940a0519acfd")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8353,7 +8025,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 90)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 21 "Net-(Q2-D)")
 			(pintype "passive")
@@ -8362,12 +8034,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 90)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "1bb384c9-f5c1-4f58-aba7-4e1452b0fcde")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8410,20 +8083,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "5e41c311-6672-47b0-b0f1-8d9139e00d62")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -8454,7 +8113,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ae53535c-e71d-4972-b3c6-b8141437491b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8572,21 +8231,22 @@
 		(pad "1" smd roundrect
 			(at -0.9125 0 180)
 			(size 0.975 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net 34 "Net-(J4-PadR2)")
+			(net 33 "Net-(J4-PadR2)")
 			(pintype "passive")
 			(uuid "43387702-79a4-4e1e-b229-210611fa2d8f")
 		)
 		(pad "2" smd roundrect
 			(at 0.9125 0 180)
 			(size 0.975 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 11 "Tacho")
 			(pintype "passive")
 			(uuid "607dc89e-f899-46b7-bf33-3332ca089828")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8629,22 +8289,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7e218010-417e-4459-bea1-f99a8cc68dc8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -8658,7 +8304,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -8673,7 +8319,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0ad98840-9099-4427-b048-d99c96d495f7")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8791,7 +8437,7 @@
 		(pad "1" smd roundrect
 			(at -1.5625 0 90)
 			(size 1.325 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.188679)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -8800,12 +8446,13 @@
 		(pad "2" smd roundrect
 			(at 1.5625 0 90)
 			(size 1.325 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.188679)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "6c4d6276-49f8-4272-afa9-3cf4326dd121")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8848,22 +8495,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "6bb08e64-cabd-4076-b82b-2a7a844dc652")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -8877,7 +8510,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -8892,7 +8525,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/4bcbe2db-18a0-42fe-9355-bbb1001188d1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9010,7 +8643,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 90)
 			(size 1.175 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.212766)
 			(net 9 "Net-(C5-Pad1)")
 			(pintype "passive")
@@ -9019,12 +8652,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 90)
 			(size 1.175 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.212766)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "f8d1178c-e03c-4872-b404-78922513fe2d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9067,20 +8701,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "10300e8a-367f-488b-911e-79cf3c37589a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -9111,7 +8731,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/a58a2277-715a-4367-bf98-11cb60e1ba1c")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9229,7 +8849,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.212766)
 			(net 5 "EN")
 			(pintype "passive")
@@ -9238,12 +8858,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.212766)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "563e4479-c4f1-4f48-b071-79d404908e02")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9286,19 +8907,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "c744079b-a792-431b-87af-96883fec6521")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
@@ -9327,7 +8935,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/c101e94f-ca53-4c41-8632-770bab70006b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9445,7 +9053,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 270)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 6 "GPIO_PWM")
 			(pintype "passive")
@@ -9454,12 +9062,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 270)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 16 "Net-(Q1-B)")
 			(pintype "passive")
 			(uuid "aeaf276e-a862-4da0-b490-4cb96e842b26")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9502,19 +9111,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 0)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "36cca46a-25f1-4752-a2d4-fcf67aa1588a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -9543,7 +9139,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/457793f5-ce95-4a88-8fce-4cbf22ca9b27")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9661,7 +9257,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 180)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 18 "Net-(Q2-G)")
 			(pintype "passive")
@@ -9670,12 +9266,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 180)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 17 "Net-(Q1-C)")
 			(pintype "passive")
 			(uuid "d9f955ed-8be6-4ca5-a14a-a5db4484fa2a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9718,20 +9315,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "9aba70fb-2fe9-4005-b2e9-ccad743bbe49")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -9762,7 +9345,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/6f31aaf7-5db1-49ab-b1de-cf4df9fb8073")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9880,7 +9463,7 @@
 		(pad "1" smd roundrect
 			(at -0.9125 0)
 			(size 0.975 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "BME688_SCL")
 			(pintype "passive")
@@ -9889,12 +9472,13 @@
 		(pad "2" smd roundrect
 			(at 0.9125 0)
 			(size 0.975 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net 22 "Net-(U2-CSB)")
+			(net 4 "+3V3")
 			(pintype "passive")
 			(uuid "34f98292-3990-4422-b1a5-13235c55492a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9937,19 +9521,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "f630883f-fe9f-44f3-bff6-884f5f76153f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
@@ -9978,7 +9549,7 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/d2c9f283-5e37-4819-9a68-09dabe2a4689")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10029,7 +9600,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "ec763d92-f6b0-499e-9fa3-f325fcdc0d7e")
 		)
@@ -10138,7 +9709,7 @@
 		(pad "1" smd roundrect
 			(at -0.9375 0.95 270)
 			(size 1.475 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 16 "Net-(Q1-B)")
 			(pinfunction "B")
@@ -10148,7 +9719,7 @@
 		(pad "2" smd roundrect
 			(at -0.9375 -0.95 270)
 			(size 1.475 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "E")
@@ -10158,13 +9729,14 @@
 		(pad "3" smd roundrect
 			(at 0.9375 0 270)
 			(size 1.475 0.6)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 17 "Net-(Q1-C)")
 			(pinfunction "C")
 			(pintype "passive")
 			(uuid "6ed149e0-15d9-4d7c-8c12-bff7df0478c8")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10207,19 +9779,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "eb0f1007-3f6e-4835-b5da-b11fa1038000")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
@@ -10248,7 +9807,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c19caf60-52f3-4603-bd80-63255c4303ca")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10366,7 +9925,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.212766)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -10375,12 +9934,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.212766)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "bb9cecc6-39d2-468a-b4a0-c256e564453d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10423,22 +9983,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_RS282G05A3"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "5e767601-b751-4ee0-a6e1-651202af1d15")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -10452,7 +9998,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -10466,7 +10012,7 @@
 			)
 		)
 		(path "/f86bf53b-75c7-4399-8ed5-45c5b3a034d6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10684,7 +10230,7 @@
 		(pad "1" smd rect
 			(at -3.9 0 90)
 			(size 1.5 1.5)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 2 "GND")
 			(pinfunction "1")
 			(pintype "passive")
@@ -10693,12 +10239,13 @@
 		(pad "2" smd rect
 			(at 3.9 0 90)
 			(size 1.5 1.5)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 9 "Net-(C5-Pad1)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "e4037061-a6c8-4009-a179-46dcce3921e4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10741,20 +10288,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "e391d87d-7faf-4889-931c-1bd6e7e381d7")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -10785,7 +10318,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/e6d4e363-c57a-4682-9bea-52121b4a2a66")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10903,21 +10436,22 @@
 		(pad "1" smd roundrect
 			(at -0.9125 0)
 			(size 0.975 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net 33 "BME688_SDA")
+			(net 32 "BME688_SDA")
 			(pintype "passive")
 			(uuid "238374b4-ad2f-4f71-b8a7-7ef022d1dd3c")
 		)
 		(pad "2" smd roundrect
 			(at 0.9125 0)
 			(size 0.975 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net 22 "Net-(U2-CSB)")
+			(net 4 "+3V3")
 			(pintype "passive")
 			(uuid "520006be-1766-4422-a7d2-8cf564df44df")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10960,20 +10494,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "444120db-fc61-4b6c-8ce2-f0822d614ca0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -11004,7 +10524,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0f409307-da42-4219-a0f2-18e9b6040a07")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11122,7 +10642,7 @@
 		(pad "1" smd roundrect
 			(at -1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.212766)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -11131,12 +10651,13 @@
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
 			(size 1.175 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.212766)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "7ca9602e-7db6-4e4c-a21f-16aed6879d74")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11179,20 +10700,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "3bec6073-4723-46bc-b05d-c77f997a6829")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -11223,7 +10730,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/51a1fdcc-2782-498e-b67f-45602c49a66f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11341,7 +10848,7 @@
 		(pad "1" smd roundrect
 			(at -0.9125 0 180)
 			(size 0.975 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -11350,12 +10857,13 @@
 		(pad "2" smd roundrect
 			(at 0.9125 0 180)
 			(size 0.975 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 11 "Tacho")
 			(pintype "passive")
 			(uuid "51f6c7ac-7869-40e0-881e-40161563a539")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11398,19 +10906,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 0)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7117ef57-ea62-425c-bcff-f09f9779e974")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -11439,7 +10934,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/08f1fdce-69af-4ec2-b5e8-a141663bc16a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11557,7 +11052,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 180)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 3 "+10V")
 			(pintype "passive")
@@ -11566,12 +11061,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 180)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 18 "Net-(Q2-G)")
 			(pintype "passive")
 			(uuid "8ed6067e-e06a-4f44-bedd-ad67407fbaf7")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11614,19 +11110,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "0bd1ebe6-6fc4-40c9-8a34-7b92595f4b7f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
@@ -11655,7 +11138,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/fd2ae56e-bae5-441e-8468-e76183ee4c89")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11793,7 +11276,7 @@
 		(pad "1" smd roundrect
 			(at -1.025 0 90)
 			(size 1.15 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2173913043)
 			(net 3 "+10V")
 			(pinfunction "K")
@@ -11803,13 +11286,14 @@
 		(pad "2" smd roundrect
 			(at 1.025 0 90)
 			(size 1.15 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2173913043)
 			(net 2 "GND")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "b7afd41b-6125-4479-b0c8-a3d2c207e889")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11852,19 +11336,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "2031c3aa-4800-4355-abcf-77fa63b9f92f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
@@ -11893,7 +11364,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/b30b7bcb-0705-4e9a-867e-9f60dec7e36a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12011,7 +11482,7 @@
 		(pad "1" smd roundrect
 			(at -1 0 90)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 16 "Net-(Q1-B)")
 			(pintype "passive")
@@ -12020,12 +11491,13 @@
 		(pad "2" smd roundrect
 			(at 1 0 90)
 			(size 1.2 1.4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.2083333333)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "a69c1515-4000-44a4-a803-527c810fc79c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12045,7 +11517,7 @@
 		(descr "https://www.mouser.com/ds/2/60/RS-282G05A-SM_RT-1159762.pdf")
 		(tags "SPST button tactile switch")
 		(property "Reference" "SW1"
-			(at 0 2.6 -90)
+			(at 0 2.6 270)
 			(layer "B.SilkS")
 			(uuid "22c2515d-d028-4657-a92a-98d42c43acc1")
 			(effects
@@ -12057,7 +11529,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 0 -3 -90)
+			(at 0 -3 270)
 			(layer "B.Fab")
 			(uuid "7b862c45-4655-486c-a9f0-288cc01da55f")
 			(effects
@@ -12068,22 +11540,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_CK_RS282G05A3"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "407b93e6-220c-474d-ae2f-5b055a0a52c0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -12097,7 +11555,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -12111,7 +11569,7 @@
 			)
 		)
 		(path "/cdd0c7ad-96fd-4d37-b122-b812469114e8")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12315,7 +11773,7 @@
 			(uuid "59d2d058-bd41-4062-a7ad-8c7c48f04da5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.6 -90)
+			(at 0 2.6 270)
 			(layer "B.Fab")
 			(uuid "5e03de30-5a9b-48c1-bdb3-4323f4848db9")
 			(effects
@@ -12329,7 +11787,7 @@
 		(pad "1" smd rect
 			(at -3.9 0 90)
 			(size 1.5 1.5)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 2 "GND")
 			(pinfunction "1")
 			(pintype "passive")
@@ -12338,12 +11796,13 @@
 		(pad "2" smd rect
 			(at 3.9 0 90)
 			(size 1.5 1.5)
-			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 25 "Net-(U3-IO9)")
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net 24 "Net-(U3-IO9)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "62e3bcb8-86bc-4c0d-8ccc-22c143e4a5eb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_CK_RS282G05A3.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12386,22 +11845,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7a7e2580-b092-4672-84b7-1fc3978d37c0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -12415,7 +11860,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -12430,7 +11875,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ee7b4fa1-1bee-48ba-bd19-3b1817d076ee")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "duct-turbo-fan-controller-v4.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12548,7 +11993,7 @@
 		(pad "1" smd roundrect
 			(at -0.8625 0 90)
 			(size 1.075 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -12557,12 +12002,13 @@
 		(pad "2" smd roundrect
 			(at 0.8625 0 90)
 			(size 1.075 0.95)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "bd3c8887-123e-4a72-8c9e-9c5fa1bede34")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13925,6 +13371,14 @@
 		(uuid "055f7603-e0ab-4e62-b8bc-924af328cafd")
 	)
 	(segment
+		(start 111.7 91.65)
+		(end 111.124 92.226)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "0739a438-3155-4c95-9cd0-3619aabeb021")
+	)
+	(segment
 		(start 112.625 56.225)
 		(end 112.625 52.84)
 		(width 0.25)
@@ -14053,6 +13507,14 @@
 		(uuid "909e402b-e415-4dcb-b148-3813421c8db9")
 	)
 	(segment
+		(start 108.997226 92.226)
+		(end 108.325 91.553774)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "9403872f-611a-4c45-be35-54538b5b995c")
+	)
+	(segment
 		(start 75.240001 88.11)
 		(end 73.64 86.509999)
 		(width 0.25)
@@ -14075,6 +13537,22 @@
 		(layer "F.Cu")
 		(net 4)
 		(uuid "998cd830-4d00-4ba0-b60c-c8d9de02fc0c")
+	)
+	(segment
+		(start 111.124 92.226)
+		(end 108.997226 92.226)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "9cf1ec38-c07a-4241-9ce7-77cf27eb148f")
+	)
+	(segment
+		(start 109.1 91.075)
+		(end 109.325 90.85)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "af7db7d6-3ed8-4a2a-ae8b-c2be3aff14d6")
 	)
 	(segment
 		(start 112.625 52.84)
@@ -14117,6 +13595,14 @@
 		(uuid "e4f922ee-3855-468c-8d46-bd2b4b68c4f4")
 	)
 	(segment
+		(start 108.325 91.075)
+		(end 109.1 91.075)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "e7b4fc68-8e67-4962-8913-2e82b82c5fb0")
+	)
+	(segment
 		(start 106.49 57.395)
 		(end 111.455 57.395)
 		(width 0.25)
@@ -14131,6 +13617,14 @@
 		(layer "F.Cu")
 		(net 4)
 		(uuid "f3f27ae5-427a-496e-927a-c4f1928262e5")
+	)
+	(segment
+		(start 108.325 91.553774)
+		(end 108.325 91.075)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "f8e500ca-58aa-4eaa-9c12-024928ae913d")
 	)
 	(segment
 		(start 107.215 58.12)
@@ -14179,6 +13673,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net 4)
 		(uuid "cbfcce5b-8865-4a52-a7e3-1c2d5a01393c")
+	)
+	(via
+		(at 108.325 91.075)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net 4)
+		(uuid "d0ca3129-b30f-49a2-aa11-bf15dfb9cdcb")
 	)
 	(segment
 		(start 105.68 69.475)
@@ -14245,6 +13747,14 @@
 		(uuid "4eaa6b6d-5641-4835-84bb-516b5ecfae9d")
 	)
 	(segment
+		(start 110.575 83.45)
+		(end 110.575 88.825)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "5155a2d2-42f3-425c-b423-af7606375144")
+	)
+	(segment
 		(start 101.451778 53.4)
 		(end 103.961778 50.89)
 		(width 0.25)
@@ -14267,6 +13777,14 @@
 		(layer "B.Cu")
 		(net 4)
 		(uuid "5c44c7b9-234b-4c4e-a50c-ef9e83d775cc")
+	)
+	(segment
+		(start 110.575 88.825)
+		(end 108.325 91.075)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "6157782a-d32e-42e9-90cf-d11cabddd6e6")
 	)
 	(segment
 		(start 103.961778 50.89)
@@ -14299,6 +13817,14 @@
 		(layer "B.Cu")
 		(net 4)
 		(uuid "6e668e0b-1001-4d10-808c-f8d34c748b99")
+	)
+	(segment
+		(start 110.45 83.325)
+		(end 110.45 84.85)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "713bc67b-9f54-4ec3-aa57-513cbe672e4d")
 	)
 	(segment
 		(start 85.9 53.3)
@@ -14805,59 +14331,11 @@
 		(uuid "fe7977ce-10be-478d-b736-1c4061af94bf")
 	)
 	(segment
-		(start 109.1 91.075)
-		(end 109.325 90.85)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 22)
-		(uuid "af7db7d6-3ed8-4a2a-ae8b-c2be3aff14d6")
-	)
-	(segment
-		(start 108.325 91.075)
-		(end 109.1 91.075)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 22)
-		(uuid "e7b4fc68-8e67-4962-8913-2e82b82c5fb0")
-	)
-	(via
-		(at 108.325 91.075)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net 22)
-		(uuid "d0ca3129-b30f-49a2-aa11-bf15dfb9cdcb")
-	)
-	(segment
-		(start 110.575 83.45)
-		(end 110.575 88.825)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 22)
-		(uuid "5155a2d2-42f3-425c-b423-af7606375144")
-	)
-	(segment
-		(start 110.575 88.825)
-		(end 108.325 91.075)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 22)
-		(uuid "6157782a-d32e-42e9-90cf-d11cabddd6e6")
-	)
-	(segment
-		(start 110.45 83.325)
-		(end 110.45 84.85)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 22)
-		(uuid "713bc67b-9f54-4ec3-aa57-513cbe672e4d")
-	)
-	(segment
 		(start 109.9 63.825)
 		(end 108.625 65.1)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 23)
+		(net 22)
 		(uuid "039b7b0c-3e31-40bf-b62f-726e1b7d7a28")
 	)
 	(segment
@@ -14865,7 +14343,7 @@
 		(end 109.9 63.825)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 23)
+		(net 22)
 		(uuid "897218b3-0a14-4669-b056-4e1a376c2018")
 	)
 	(segment
@@ -14873,7 +14351,7 @@
 		(end 103.7625 56.7625)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 24)
+		(net 23)
 		(uuid "8c894d92-6ddd-4a1f-a6c8-8856482ea0cf")
 	)
 	(segment
@@ -14881,7 +14359,7 @@
 		(end 103.325 56.325)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 24)
+		(net 23)
 		(uuid "b7232eae-4045-4967-b8a1-1555f7c2ced9")
 	)
 	(via
@@ -14889,7 +14367,7 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 25)
+		(net 24)
 		(uuid "83f9a7fd-8b8f-4481-893d-1a9554170665")
 	)
 	(segment
@@ -14897,7 +14375,7 @@
 		(end 80.5 63.025)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 25)
+		(net 24)
 		(uuid "559b7ffe-2e03-4c14-8755-807f4df71efa")
 	)
 	(segment
@@ -14905,7 +14383,7 @@
 		(end 79.7 63.825)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 25)
+		(net 24)
 		(uuid "67f564f4-3503-46f6-b365-b83b475d82ef")
 	)
 	(segment
@@ -14913,7 +14391,7 @@
 		(end 94.015 77.435)
 		(width 0.5)
 		(layer "F.Cu")
-		(net 27)
+		(net 26)
 		(uuid "a2d754cd-f130-4883-add8-5d6390d202d5")
 	)
 	(segment
@@ -14921,7 +14399,7 @@
 		(end 94.54 79.535)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 28)
+		(net 27)
 		(uuid "0206cd54-c18d-4bad-9ba5-8c12f514c0b0")
 	)
 	(segment
@@ -14929,7 +14407,7 @@
 		(end 88.755 78.45)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 28)
+		(net 27)
 		(uuid "286f9e68-3e21-4aa0-bf5a-19a933fa6996")
 	)
 	(segment
@@ -14937,7 +14415,7 @@
 		(end 97.34 76.735)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 28)
+		(net 27)
 		(uuid "36f72de6-13d1-42f8-985c-0133bb5552a5")
 	)
 	(segment
@@ -14945,7 +14423,7 @@
 		(end 95.915 74.56)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 28)
+		(net 27)
 		(uuid "43367dbf-04a3-42b2-b597-3cdbf3bd1d36")
 	)
 	(segment
@@ -14953,7 +14431,7 @@
 		(end 85.62 76.615)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 28)
+		(net 27)
 		(uuid "6bfe604c-dd61-4765-ba6c-3e8af9cc952b")
 	)
 	(segment
@@ -14961,7 +14439,7 @@
 		(end 89.84 79.535)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 28)
+		(net 27)
 		(uuid "85ae4212-6ba9-4a58-b885-847b88aa9e2e")
 	)
 	(segment
@@ -14969,7 +14447,7 @@
 		(end 97.34 75.985)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 28)
+		(net 27)
 		(uuid "d3ed2349-6c59-4b39-9b9d-ae7b72c84661")
 	)
 	(segment
@@ -14977,7 +14455,7 @@
 		(end 95.915 70.835)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 29)
+		(net 28)
 		(uuid "1246abf2-a362-48a7-b416-4405513e5e5d")
 	)
 	(segment
@@ -14985,7 +14463,7 @@
 		(end 96.54 70.21)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 29)
+		(net 28)
 		(uuid "ad19c9e4-9a20-4d52-8934-4223428f7b5a")
 	)
 	(segment
@@ -14993,7 +14471,7 @@
 		(end 103.58 58.87)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 31)
+		(net 30)
 		(uuid "f0e81c51-13f0-4255-812a-c439b0947b11")
 	)
 	(segment
@@ -15001,7 +14479,7 @@
 		(end 103.57 60.45)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 32)
+		(net 31)
 		(uuid "8047c1b2-e5ae-4901-8209-c647b2f3c9d6")
 	)
 	(segment
@@ -15009,7 +14487,7 @@
 		(end 107.325 85.8)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "075cda36-d456-4dff-ba90-341323507025")
 	)
 	(segment
@@ -15017,7 +14495,7 @@
 		(end 110.0125 86.4875)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "10eab1f0-019e-435b-9c9b-083f2c9134d7")
 	)
 	(segment
@@ -15025,7 +14503,7 @@
 		(end 109.325 90.05)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "1a2fe1af-a95c-413e-892e-2cf2112f9714")
 	)
 	(segment
@@ -15033,7 +14511,7 @@
 		(end 85.439999 84.36)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "2540882e-fa07-4c9d-96bd-95a9db8a14dd")
 	)
 	(segment
@@ -15041,7 +14519,7 @@
 		(end 108.275 84.85)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "33104d7c-000b-4283-9fcf-44bda43098c4")
 	)
 	(segment
@@ -15049,7 +14527,7 @@
 		(end 85.84 84.760001)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "4f33360b-1fed-4a92-a7f9-4d54e00e8fe9")
 	)
 	(segment
@@ -15057,7 +14535,7 @@
 		(end 84.49 84.36)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "5afdd222-6eaa-4c99-851b-a0ecff30128a")
 	)
 	(segment
@@ -15065,7 +14543,7 @@
 		(end 105 73.075)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "5d82197d-1f36-42d3-bae3-266114f8341a")
 	)
 	(segment
@@ -15073,7 +14551,7 @@
 		(end 105.68 77.126016)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "654e105c-b8c0-4c45-8752-a96ada8747b7")
 	)
 	(segment
@@ -15081,7 +14559,7 @@
 		(end 85.84 85.785)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "8608741f-c47d-4af9-b687-608606383ea4")
 	)
 	(segment
@@ -15089,7 +14567,7 @@
 		(end 109.325 90.05)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "9db48ba1-f38e-4634-88be-64d4072ab404")
 	)
 	(segment
@@ -15097,7 +14575,7 @@
 		(end 88.95 66.775)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "c0e08e1e-7787-487c-b9e1-8315ef5e8654")
 	)
 	(segment
@@ -15105,7 +14583,7 @@
 		(end 110.0125 89.624999)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "cfb74e74-3a9a-40d9-80cd-decd9887ecb6")
 	)
 	(segment
@@ -15113,7 +14591,7 @@
 		(end 106.165 86.96)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "d01a5a7c-0bfa-4621-b6c4-e01d104261d1")
 	)
 	(segment
@@ -15121,7 +14599,7 @@
 		(end 108.275 79.721016)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "d57cbe83-df4b-403c-94f6-140f8d2ee31b")
 	)
 	(segment
@@ -15129,7 +14607,7 @@
 		(end 109.587499 90.05)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "d5bce154-08db-4d38-874c-c3e9df221302")
 	)
 	(segment
@@ -15137,7 +14615,7 @@
 		(end 98.7 66.775)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "e6212941-3357-43db-aa26-2cc14a4f3c1a")
 	)
 	(segment
@@ -15145,7 +14623,7 @@
 		(end 87.015 86.96)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 33)
+		(net 32)
 		(uuid "f59501ab-8503-45b6-a005-f338ae732069")
 	)
 	(via
@@ -15153,7 +14631,7 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 33)
+		(net 32)
 		(uuid "9cb89d92-dbaa-4f49-b7c7-2f617086a8f3")
 	)
 	(segment
@@ -15161,7 +14639,7 @@
 		(end 110.125 88.438173)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 33)
+		(net 32)
 		(uuid "37076019-94d0-439c-a78c-748f000a6d60")
 	)
 	(segment
@@ -15169,7 +14647,7 @@
 		(end 110.125 86.136827)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 33)
+		(net 32)
 		(uuid "55bcb14e-35e4-422b-9e49-b3c6b3e070c1")
 	)
 	(segment
@@ -15177,7 +14655,7 @@
 		(end 108.513173 90.05)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 33)
+		(net 32)
 		(uuid "59e7a7cf-3fce-4129-a557-df877cf63aa9")
 	)
 	(segment
@@ -15185,7 +14663,7 @@
 		(end 108.3 90.05)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 33)
+		(net 32)
 		(uuid "68a4ccbd-abc9-4526-9692-6dad9aa116fd")
 	)
 	(segment
@@ -15193,7 +14671,7 @@
 		(end 109.4375 84.1375)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 33)
+		(net 32)
 		(uuid "6eccfe3e-689d-49d3-bc27-4bc368c698b3")
 	)
 	(segment
@@ -15201,7 +14679,7 @@
 		(end 109.4375 85.449327)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 33)
+		(net 32)
 		(uuid "e04f8230-bcc5-4810-8331-98b737ac7778")
 	)
 	(segment
@@ -15209,7 +14687,7 @@
 		(end 112.475 81.208969)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 34)
+		(net 33)
 		(uuid "033cabe0-ee5b-4163-a84c-230c322be615")
 	)
 	(segment
@@ -15217,7 +14695,7 @@
 		(end 109.325 78.058969)
 		(width 0.25)
 		(layer "F.Cu")
-		(net 34)
+		(net 33)
 		(uuid "cc0f6276-8345-45c3-9272-55951e8e123b")
 	)
 	(via
@@ -15225,7 +14703,7 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 34)
+		(net 33)
 		(uuid "0a8b0fc7-c300-4de7-8b9e-5c7d9d77fde0")
 	)
 	(segment
@@ -15233,7 +14711,7 @@
 		(end 90.775 69.375)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 34)
+		(net 33)
 		(uuid "1e0d3cdf-ba3e-4fc9-b205-473e3e5d7bc9")
 	)
 	(segment
@@ -15241,7 +14719,7 @@
 		(end 98.2 69.375)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 34)
+		(net 33)
 		(uuid "467acb48-5360-496b-9e55-a20d52f736af")
 	)
 	(segment
@@ -15249,7 +14727,7 @@
 		(end 99.404866 70.579866)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 34)
+		(net 33)
 		(uuid "86a3dbdd-7e3f-4dfc-8594-b961a54b2885")
 	)
 	(segment
@@ -15257,7 +14735,7 @@
 		(end 90.65 69.5)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 34)
+		(net 33)
 		(uuid "8da8f690-7e17-4acc-9b71-afbb668285fd")
 	)
 	(segment
@@ -15265,7 +14743,7 @@
 		(end 106.872573 78.058969)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 34)
+		(net 33)
 		(uuid "a07fc894-8ee4-4835-8182-d53f6a608eb1")
 	)
 	(segment
@@ -15273,11 +14751,11 @@
 		(end 99.404866 70.591262)
 		(width 0.25)
 		(layer "B.Cu")
-		(net 34)
+		(net 33)
 		(uuid "d6808072-0e38-4490-b7a6-4d1e09f3f86e")
 	)
 	(zone
-		(net 30)
+		(net 29)
 		(net_name "BUCK_PWM_OUT")
 		(layer "F.Cu")
 		(uuid "2f8096fa-fa2b-4ad1-a3e9-b687053f4fd7")
@@ -16164,7 +15642,7 @@
 	(zone
 		(net 0)
 		(net_name "")
-		(layers "F&B.Cu")
+		(layers "F.Cu" "B.Cu")
 		(uuid "3d77f884-b8b2-42c5-809e-4013cd011750")
 		(hatch edge 0.5)
 		(connect_pads
@@ -16178,6 +15656,10 @@
 			(pads allowed)
 			(copperpour not_allowed)
 			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
 		)
 		(fill
 			(thermal_gap 0.5)
@@ -17040,4 +16522,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
