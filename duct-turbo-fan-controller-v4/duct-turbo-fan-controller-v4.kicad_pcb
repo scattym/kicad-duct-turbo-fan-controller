@@ -12425,7 +12425,7 @@
 		)
 	)
 	(gr_text "RUN"
-		(at 99.65 60.925 0)
+		(at 99.75 59.35 0)
 		(layer "F.SilkS")
 		(uuid "5c449ce5-2c12-4b3b-9ec4-9c32c3e1156f")
 		(effects
@@ -12451,7 +12451,7 @@
 		)
 	)
 	(gr_text "PWR"
-		(at 99.65 59.45 0)
+		(at 99.725 60.925 0)
 		(layer "F.SilkS")
 		(uuid "8855c36b-dc54-4e83-ab61-28a0ddd818f2")
 		(effects
